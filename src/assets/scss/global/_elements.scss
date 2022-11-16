@@ -1,5 +1,5 @@
 body {
-  background-color: hsl(var(--primary050));
+  background-color: hsl(var(--neutral050));
   color: hsl(var(--neutral900));
   font-family: var(--sans);
   font-size: var(--step0);
@@ -10,6 +10,7 @@ body {
 
 main {
   width: 100vw;
+  padding: var(--space0);
 }
 
 ::selection {
