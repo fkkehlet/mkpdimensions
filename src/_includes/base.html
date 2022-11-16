@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description }}">
+  <link rel="preload" href="/assets/fonts/kronaone.woff" as="font" type="font/woff">
+  <link rel="preload" href="/assets/fonts/opensans-400.woff" as="font" type="font/woff">
+  <link rel="preload" href="/assets/fonts/opensans-700.woff" as="font" type="font/woff">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <title>{{ title }}</title>
+
+  {% block head %}{% endblock %}
+</head>
+<body class="stack">
+  {% block body %}{% endblock %}
+</body>
+</html>
