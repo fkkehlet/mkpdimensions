@@ -1,6 +1,6 @@
 body {
-  background-color: hsl(var(--neutral050));
-  color: hsl(var(--neutral900));
+  background-color: hsl(var(--primary200));
+  color: hsl(var(--primary200));
   font-family: var(--sans);
   font-size: var(--step0);
   font-weight: var(--weight400);
@@ -8,9 +8,14 @@ body {
   line-height: var(--linebody);
 }
 
+header {
+  background: hsl(var(--primary200));
+  color: hsl(var(--primary700));
+  a { color: hsl(var(--primary700)); }
+}
+
 main {
   width: 100vw;
-  padding: var(--space0);
 }
 
 ::selection {
@@ -69,8 +74,15 @@ button {
 
 
 a {
-
-  &:focus {}
+  //color: hsl(var(--primary500));
+  //font-style: italic;
+  padding-bottom: var(--border-1);
+  border-bottom: var(--border-2) solid;
+  &:hover {
+    border: none;
+  }
+  &:focus {
+  }
   &:link {}
   &:visited {}
 }
